@@ -6,17 +6,17 @@ import { MemberHead } from './memberHead'
 
 interface Props {}
 
-const loadMembers = setMembers => () => {
-  memberAPI.getAllMembers('lemoncode').then(members => setMembers(members))
-}
-
 export const MembersTableComponent: React.StatelessComponent<Props> = props => {
   const [members, setMembers] = React.useState([] as MemberEntity[])
+
+  const loadMembers = () => {
+    memberAPI.getAllMembers('lemoncode').then(members => setMembers(members))
+  }
 
   return (
     <div className="row">
       <h2> Members Page</h2>
-      <button onClick={loadMembers(setMembers)}>Load</button>
+      <button onClick={loadMembers}>Load</button>
       <table className="table">
         <thead>
           <MemberHead />
