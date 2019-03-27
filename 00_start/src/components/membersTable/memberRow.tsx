@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { MemberEntity } from '../../model/member'
+import * as React from 'react';
+import { MemberEntity } from '../../model/member';
 
 interface Props {
-  member: MemberEntity
+  member: MemberEntity;
 }
 
 export const MemberRow: React.StatelessComponent<Props> = props => (
@@ -17,4 +17,4 @@ export const MemberRow: React.StatelessComponent<Props> = props => (
       <span>{props.member.login}</span>
     </td>
   </tr>
-)
+);

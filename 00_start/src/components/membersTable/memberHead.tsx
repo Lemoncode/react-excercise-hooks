@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export const MemberHead = () => (
   <tr>
@@ -6,4 +6,4 @@ export const MemberHead = () => (
     <th>Id</th>
     <th>Name</th>
   </tr>
-)
+);

@@ -1,1 +1,1 @@
-export * from './membersTable'
+export * from './membersTable';

@@ -1,4 +1,4 @@
-import { MemberEntity } from './member'
+import { MemberEntity } from './member';
 
 const MembersMockData: MemberEntity[] = [
   {
@@ -11,6 +11,6 @@ const MembersMockData: MemberEntity[] = [
     login: 'Nasdan',
     avatar_url: 'https://avatars.githubusercontent.com/u/4374977?v=3',
   },
-]
+];
 
-export default MembersMockData
+export default MembersMockData;

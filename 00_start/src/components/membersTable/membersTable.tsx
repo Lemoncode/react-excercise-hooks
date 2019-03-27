@@ -1,17 +1,17 @@
-import * as React from 'react'
-import { MemberEntity } from '../../model/member'
-import { memberAPI } from '../../api/memberAPI'
-import { MemberRow } from './memberRow'
-import { MemberHead } from './memberHead'
+import * as React from 'react';
+import { MemberEntity } from '../../model/member';
+import { memberAPI } from '../../api/memberAPI';
+import { MemberRow } from './memberRow';
+import { MemberHead } from './memberHead';
 
 interface Props {}
 
 export const MembersTableComponent: React.StatelessComponent<Props> = props => {
-  const [members, setMembers] = React.useState([] as MemberEntity[])
+  const [members, setMembers] = React.useState([] as MemberEntity[]);
 
   const loadMembers = () => {
-    memberAPI.getAllMembers('lemoncode').then(members => setMembers(members))
-  }
+    memberAPI.getAllMembers('lemoncode').then(members => setMembers(members));
+  };
 
   return (
     <div className="row">
@@ -28,5 +28,5 @@ export const MembersTableComponent: React.StatelessComponent<Props> = props => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};

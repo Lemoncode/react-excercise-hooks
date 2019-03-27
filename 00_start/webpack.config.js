@@ -1,8 +1,8 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var MiniCssExtractPlugin = require('mini-css-extract-plugin')
-var path = require('path')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var path = require('path');
 
-var basePath = __dirname
+var basePath = __dirname;
 
 module.exports = {
   context: path.join(basePath, 'src'),
@@ -63,4 +63,4 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
   ],
-}
+};
